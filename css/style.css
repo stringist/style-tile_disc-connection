@@ -163,7 +163,7 @@ footer {
 }
 
 .header-wrapper h1 {
-    font-family: var(--accent-font);-oblique
+    font-family: var(--accent-font);
     font-size: 3rem;
     text-transform: uppercase;
     padding-right: 0.75em;
