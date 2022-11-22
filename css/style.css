@@ -299,6 +299,7 @@ section.textures {
 }
 
 button {
+    border: none;
     /* padding: 1rem; */
     border-radius: 1px;
     background: var(--color-secondary1);
