@@ -229,7 +229,8 @@ ul {
   text-align: center;
   display: grid;
   place-items: center;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 70%;
   text-transform: uppercase;
   /* transform: rotate(90deg); */
 }
@@ -355,15 +356,12 @@ section.textures {
 
 button {
   text-align: center;
-
-  /* border: solid 2px var(--color-secondary1); */
   border: none;
-  /* padding: 1rem; */
   border-radius: 3px;
   background: var(--color-secondary1);
   text-align: center;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: .8rem;
   font-weight: 500;
   font-family: var(--header-font);
   /* font: bold 1.5em/1 var(--header-font); */
@@ -374,7 +372,7 @@ button {
   transition: all 0.3s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
-  padding: 0.75rem 1.5rem;
+  padding: .75rem 2rem;
   box-shadow: 3px 3px 0px var(--color-secondary2);
 }
 
@@ -383,17 +381,18 @@ button:hover {
 
 }
 .primary-button {
-  border: solid 2px var(--color-secondary2);
+  border: solid 1px var(--color-secondary2);
 }
 
 .secondary-button {
   color: var(--color-secondary2);
-  border: solid 2px var(--color-secondary2);
+  border: solid 1px var(--color-secondary2);
   background: var(--color-primary1);
 }
 
 .primary-button:hover {
   background-color: #2b74f3;
+  box-shadow: 4px 4px 0px var(--color-secondary2);
 }
 
 .secondary-button:hover {
