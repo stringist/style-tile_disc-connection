@@ -483,7 +483,9 @@ p[class*="font-details-"] {
   font-family: var(--body-font);
   display: flex;
   flex-direction: column;
-  /* list-style-type: disc; */
+  list-style-type: circle;
+  margin-left: 0.8rem;
+
 }
 
 .adjectives ul li {
@@ -491,10 +493,10 @@ p[class*="font-details-"] {
   margin-bottom: 1%;
 }
 
-.adjectives ul ::before {
+/* .adjectives ul ::before {
   content: "• ";
-  /* content: '• ' */
-}
+  content: '• '
+} */
 
 footer {
   font-style: italic;
