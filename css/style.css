@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('//db.onlinewebfonts.com/c/3257d69b23d3efae23d2a1088d1d8116?family=TitaniumMotorsW01-Oblique');
+
+@font-face {
+    font-family: 'titanium-motors';
+    src: url('../fonts/titanium-motors-oblique.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/titanium-motors-oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/titanium-motors-oblique.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/titanium-motors-oblique.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/titanium-motors-oblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/titanium-motors-oblique.otf')  format('opentype'), /* Safari, Android, iOS */
+  }
 
 /* 
 
@@ -37,7 +46,7 @@ use the fonts in other ways in the font hierarchy etc. */
     --disabled-text-color: rgba(0, 0, 0, 0.38);
     --white-space: 1rem;
     --header-font: 'Roboto', sans-serif;
-    --accent-font: 'TitaniumMotorsW01-Oblique', sans-serif;
+    --accent-font: 'titanium-motors', sans-serif;
     --body-font: "Nunito", sans-serif;
 }
 
@@ -154,7 +163,7 @@ footer {
 }
 
 .header-wrapper h1 {
-    font-family: 'TitaniumMotorsW01-Oblique', sans-serif;
+    font-family: var(--accent-font);-oblique
     font-size: 3rem;
     text-transform: uppercase;
     padding-right: 0.75em;
@@ -299,6 +308,8 @@ section.textures {
 }
 
 button {
+    border: solid 2px var(--color-secondary1);
+
     border: none;
     /* padding: 1rem; */
     border-radius: 1px;
@@ -327,6 +338,12 @@ button {
 
 .primary-button:hover {
     background-color: var(--color-accent2);
+}
+
+.secondary-button:hover {
+    color: var(--color-secondary1);
+    border: solid 2px var(--color-secondary1);
+    background: var(--color-primary1);
 }
 
 button:focus,
