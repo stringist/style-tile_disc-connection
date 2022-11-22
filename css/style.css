@@ -13,7 +13,7 @@
 /* url('../fonts/titanium-motors-oblique.otf')  format('opentype'), Safari, Android, iOS */
 /* } */
 
-@import url('//db.onlinewebfonts.com/c/3257d69b23d3efae23d2a1088d1d8116?family=TitaniumMotorsW01-Oblique');
+@import url("//db.onlinewebfonts.com/c/3257d69b23d3efae23d2a1088d1d8116?family=TitaniumMotorsW01-Oblique");
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
@@ -253,8 +253,9 @@ ul li:last-child {
   border: solid 0.5px rgba(0, 0, 0, 0.25);
 }
 .swatchgrid li span {
-    margin: auto;
-    transform: rotate(90deg);}
+  margin: auto;
+  transform: rotate(90deg);
+}
 
 .color-swatch-1 {
   background-color: var(--color-primary1);
@@ -353,9 +354,9 @@ section.textures {
 } */
 
 button {
-    text-align: center;
+  text-align: center;
 
-  border: solid 2px var(--color-secondary1);
+  /* border: solid 2px var(--color-secondary1); */
   border: none;
   /* padding: 1rem; */
   border-radius: 3px;
@@ -369,11 +370,20 @@ button {
   letter-spacing: 1px;
   color: var(--color-primary1);
   /* text-transform: uppercase; */
-  text-shadow: -1px -1px 0px var(--darkgrey);
+  /* text-shadow: -1px -1px 0px var(--darkgrey); */
   transition: all 0.3s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 3px 3px 0px var(--color-secondary2);
+}
+
+button:hover {
+  transform: translate(-1px, -1px);
+
+}
+.primary-button {
+  border: solid 2px var(--color-secondary2);
 }
 
 .secondary-button {
@@ -382,22 +392,16 @@ button {
   background: var(--color-primary1);
 }
 
-.primary-button:hover {transform: translate(-2px, -2px);
-    /* filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5)); */
-    box-shadow: 4px 4px 0px var(--color-secondary2);
-    text-shadow: 1px 1px 1px var(--color-secondary2);
-   
-  background-color: var(--color-accent2);
+.primary-button:hover {
+  background-color: #2b74f3;
 }
 
-.secondary-button:hover {transform: translate(-2px, -2px);
-    /* filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5)); */
-    box-shadow: 4px 4px 0px var(--color-secondary2);
-    /* text-shadow: 1px 1px 1px #b62f00; */
-   
+.secondary-button:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--color-secondary2);
   color: var(--color-secondary1);
-  border: solid 2px var(--color-secondary1);
-  background: var(--color-primary1);
+  background: var(--color-secondary1);
+  color: var(--color-primary1);
 }
 
 button:focus,
@@ -485,7 +489,6 @@ p[class*="font-details-"] {
   flex-direction: column;
   list-style-type: circle;
   margin-left: 0.8rem;
-
 }
 
 .adjectives ul li {
