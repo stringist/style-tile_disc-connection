@@ -37,13 +37,18 @@ use the fonts in other ways in the font hierarchy etc. */
   /* --color-accent2: #20A4F3; */
   /* --color-primary1: #FFFFFF; */
   --color-primary1: #fffffa;
+  --color-primary1: #fafafa;
   /* --color-primary1: #F5F5F5; */
   /* --color-primary1: #FFFAFA; */
-  --color-primary2: #f3f3f3;
+  --color-primary2: #c7c7c7;
   --color-secondary1: #1f5ac0;
+  --color-secondary1: #0288D1;
   --color-secondary2: #0e3477;
+  --color-secondary2: #005b9f;
   --color-accent1: #e71f00;
+  --color-accent1: #e53935;
   --color-accent2: #49cfff;
+  --color-accent2: #63ccff;
   --primary-font: "nunito", sans-serif;
   --secondary-font: "Roboto", sans-serif;
   --main-text-color: rgba(0, 0, 0, 0.75);
@@ -251,7 +256,8 @@ ul li:last-child {
 }
 
 .swatchgrid li {
-  border: solid 0.5px rgba(0, 0, 0, 0.25);
+  /* border: solid 0.5px rgba(0, 0, 0, 0.25); */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 }
 .swatchgrid li span {
   margin: auto;
@@ -391,7 +397,8 @@ button:hover {
 }
 
 .primary-button:hover {
-  background-color: #2b74f3;
+  color: var(--color-secondary2);
+  background-color: var(--color-accent2);
   box-shadow: 4px 4px 0px var(--color-secondary2);
 }
 
@@ -420,7 +427,7 @@ button:focus-within {
 
 .h1-sample {
   font-family: var(--header-font);
-  color: var(--color-secondary1);
+  color: var(--color-secondary2);
   /* text-transform: uppercase; */
   font-size: 2.4rem;
   /* font-weight: bold; */
@@ -433,7 +440,7 @@ button:focus-within {
   font-size: 1.8rem;
   font-weight: 500;
   margin-right: 20%;
-  color: var(--color-secondary1);
+  color: var(--color-secondary2);
   /* color: var(--offwhite); */
   padding: 1rem;
 }
