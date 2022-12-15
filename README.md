@@ -1,4 +1,8 @@
-# Style Tiles in HTML, CSS - starting point
+# Style Tiles in HTML, CSS - Adapted
+
+Adapted from https://github.com/jeradg/style-tiles-with-scss for Disc Connection/KEA Final exam.
+
+----------------- Original -----------------------------------------------------------
 
 This is meant as a starting point for an online style Tile.
 
